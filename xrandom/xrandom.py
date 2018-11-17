@@ -11,10 +11,14 @@ def salt(length: int = None):
     return ''.join(s)
 
 
-def name():
+def fake_name(gender='male', nation='us'):
     import requests
+
     # https://randomuser.me/
-    r = requests.get('https://randomuser.me/api/?gender=male&nat=us')
+    r = requests.get('https://randomuser.me/api/?gender={gender}&nat={nation}'.format(
+        gender=gender, nation=nation
+    ))
+
     name = r.json()['results'][0]['name']
     # picture = r.json()['results'][0]['picture']['large'].strip()
     first_name = name['first'].strip().capitalize()

@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="xrandom",
-    version="0.1.2",
+    version="0.1.4",
     author="@neoctobers",
     author_email="neoctobers@gmail.com",
     description="Random something.",
