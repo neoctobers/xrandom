@@ -12,3 +12,4 @@ $ pip3 install xrandom
 
 - `xrandom.salt()`
 - ...
+
